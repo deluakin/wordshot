@@ -1,0 +1,221 @@
+body{
+  background-color: #050d31;
+  color: #fff;
+}
+html, body, #root, .App, #ball-container{
+  overflow: hidden;
+}
+#ball-container{
+  position: relative;
+}
+html, body, .App, #ball-container, .aligner{
+  height: 100vh;
+}
+.social-icons img{
+  width: 60px;
+}
+.red-ball{
+  background-color: #9b0101 !important;
+}
+.logo{
+  width: 200px;
+}
+.bullet-icon{
+  width: 30px;
+  position: relative;
+  top: -7px;
+}
+.gunshot-text{
+  text-decoration: line-through;
+  text-decoration-color: #050d31;
+  text-decoration-style: solid;
+  
+}
+
+.clearfix{
+  clear: both;
+}
+
+.opac-half{
+  opacity: 0.4;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.ball {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  display: flex;
+	width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin: auto;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  font-size: 24px;
+  top: -100px;
+  cursor: pointer;
+
+  background-color: rgb(49, 145, 231);
+	box-shadow: inset -25px -15px 40px rgba(0,0,0,.3);
+}
+
+
+.text20{
+  font-size: 20px;
+}
+
+.star, .sky{
+  overflow: hidden;
+}
+
+.text16{
+  font-size: 16px;
+}
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aligner-item {
+  max-width: 80%;
+}
+.mt100{
+  margin-top: 100px;
+}
+.mt50{
+  margin-top: 50px;
+}
+.mt20{
+  margin-top: 20px;
+}
+.mb20{
+  margin-bottom: 20px;
+}
+.note{
+  padding: 20px;
+  line-height: 2;
+  text-align: center;
+}
+.pt20{
+  padding-top: 20px;
+}
+.pt5{
+  padding-top: 5px;
+}
+.mt0{
+  margin-top: 0px;
+}
+.text-center{
+  text-align: center;
+}
+
+.button{
+  width: 200px;
+  padding: 10px 50px;
+  background: #fff;
+  color: #5e6067;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 90px;
+  cursor: pointer;
+}
+
+.opac-0{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.fadeout{
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s, visibility 1s linear;
+}
+
+.fadein{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.text-200{
+  font-size: 200px;
+}
+
+.points-bar{
+  background-color: #fff;
+    color: #2773b7;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.p10{
+  padding: 10px;
+}
+.text30{
+  font-size: 30px;
+}
+.m-l-10{
+  margin-left: 10px;
+}
+.point-bar{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.ball span{
+  margin: auto;
+  text-align: center; 
+  position: relative;
+}
+
+.ball span::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hide{
+  display: none !important;
+}
+
+
+
+/*****************************************
+Check out Nat's pen with animated SVG weather icons. 
+
+https://codepen.io/nsayenko/pen/JKzxdm/
+*******************************************/
+.sky {
+  position:absolute;
+  width:100%;
+  background: #4B79A1;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #283E51, #0A2342);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #283E51, #0A2342); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -olinear-gradient(to top, #283E51, #0A2342); 
+  height: 100vh;
+}
+.stars {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+  background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
