@@ -11,5 +11,6 @@ var Variables = {
             "overenthusiastically","uncharacteristically","antiestablishmentism",
             "magnetohyrodynamics"],
     word: "",
+    apiBase: "https://wordshot.brainwavegh.com/hige-score/",
 };
 export default Variables;

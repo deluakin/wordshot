@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Variables from "./Variables";
+import Variables from "./variables";
 
 export class NewGame extends Component {
 
@@ -148,7 +148,7 @@ export class NewGame extends Component {
             winStatus: 1
         })
 
-        fetch('https://brainwavegh.com/wordshot/hige-score/set.php?point='+Variables.totalPoints, 
+        fetch(`${Variables.apiBase}set.php?point=${Variables.totalPoints}`, 
         {mode: 'cors'})
           .then(results => {
             //return results.json();

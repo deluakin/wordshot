@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Variables from "./Variables";
+import Variables from "./variables";
 
 export class GetStarted extends Component {
 

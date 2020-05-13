@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Start from './components/start'
 import './App.css';
-import Variables from './components/Variables';
+import Variables from './components/variables';
 
 class App extends Component {
 
@@ -11,7 +11,7 @@ class App extends Component {
 componentWillMount(){
   var random = parseInt(Math.random() * Variables.words.length)
   Variables.word = Variables.words[random].toUpperCase()
-  fetch('https://wordshot.brainwavegh.com/hige-score/get.php?v='+Math.random(), 
+  fetch(`${Variables.apiBase}get.php?v=${Math.random()}`,
       {mode: 'cors'})
         .then(results => {
           return results.json();
