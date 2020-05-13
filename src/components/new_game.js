@@ -128,7 +128,7 @@ export class NewGame extends Component {
                     ball.remove()
                 }
 
-                if(mthis.timercount == 0){
+                if(mthis.timercount === 0){
                     if(Variables.totalPoints > Variables.targetPoint){
                         mthis.YouWon();
                     }else{
