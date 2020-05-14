@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Variables from "./variables";
+import Variables from "./config";
 
 export class NewGame extends Component {
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Start from './components/start'
 import './App.css';
-import Variables from './components/variables';
+import Variables from './components/config';
 
 class App extends Component {
 
