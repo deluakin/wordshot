@@ -216,6 +216,6 @@ https://codepen.io/nsayenko/pen/JKzxdm/
   width:100%;
   height:100%;
   display:block;
-  background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  background:url(https://wordshot.herokuapp.com/stars.png) repeat top center;
   z-index:0;
 }
