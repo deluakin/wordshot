@@ -148,7 +148,7 @@ export class NewGame extends Component {
             winStatus: 1
         })
 
-        fetch(`${Variables.apiBase}set.php?point=${Variables.totalPoints}`, 
+        fetch(`${Variables.apiBase}score/set?point=${Variables.totalPoints}`, 
         {mode: 'cors'})
           .then(results => {
             //return results.json();

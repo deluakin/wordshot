@@ -11,6 +11,6 @@ var Variables = {
             "overenthusiastically","uncharacteristically","antiestablishmentism",
             "magnetohyrodynamics"],
     word: "",
-    apiBase: "https://wordshot.heroku.com/api/",
+    apiBase: "https://wordshot.herokuapp.com/api/",
 };
 export default Variables;

@@ -11,7 +11,7 @@ class App extends Component {
 componentWillMount(){
   var random = parseInt(Math.random() * Variables.words.length)
   Variables.word = Variables.words[random].toUpperCase()
-  fetch(`${Variables.apiBase}get.php?v=${Math.random()}`,
+  fetch(`${Variables.apiBase}get?v=${Math.random()}`,
       {mode: 'cors'})
         .then(results => {
           return results.json();
