@@ -9,8 +9,8 @@ class App extends Component {
     isReady: false,
 }
 componentWillMount(){
-  var random = parseInt(Math.random() * Variables.words.length)
-  Variables.word = Variables.words[random].toUpperCase()
+  // var random = parseInt(Math.random() * Variables.words.length)
+  // Variables.word = Variables.words[random].toUpperCase()
   fetch(`${Variables.apiBase}get?v=${Math.random()}`,
       {mode: 'cors'})
         .then(results => {
@@ -18,6 +18,7 @@ componentWillMount(){
         }).then(data => {
           if(data.hasOwnProperty('score')){
             Variables.targetPoint = data.score
+            Variables.word = data.word
             this.setState({
               isReady: true
             })
