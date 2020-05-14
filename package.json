@@ -10,7 +10,7 @@
   "scripts": {
     "start-server": "cd server && npm i && node app.js",
     "start-game": "react-scripts start",
-    "start": "npm run start-server & npm run start-game",
+    "start": "npm run build & npm run start-server",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
