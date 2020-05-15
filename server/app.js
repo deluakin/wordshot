@@ -7,9 +7,12 @@ express.json()
 const app = express()
 
 const PORT = process.env.PORT || 3001
-app.listen(PORT, () => {
-    console.log("Server running...")
-})
+setTimeout(() => {
+    app.listen(PORT, () => {
+        console.log("Server running...")
+    })
+}, 2000)
+console.log("Starting server...")
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, '/../build')));
