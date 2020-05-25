@@ -10,7 +10,6 @@ const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
     console.log("Server running...")
 })
-console.log("Starting server...")
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, '/../build')));
