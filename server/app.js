@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 
 app.get("/api/get", (req, res) => {
     let w = words.filter((word) => word.length === 15)
-    const random = Math.floor(Math.random() * w.length - 1)
+    const random = Math.floor(Math.random() * (w.length - 1))
     const data = fs.readFileSync("score.txt");
     let score = data.toString()
 

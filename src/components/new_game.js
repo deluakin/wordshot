@@ -178,8 +178,9 @@ export class NewGame extends Component {
         var att = document.createAttribute("data-top");
         att.value = (-120 * index);
 
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         var ball = document.createElement("DIV");
-        ball.addEventListener("touchend", (ev) => {
+        ball.addEventListener(isMobile ? "touchend" : "click", (ev) => {
             let target = ev.target
             let alphabet = target.innerText.trim()
             let position = this.wordSearch.indexOf(alphabet)

@@ -7,7 +7,7 @@ class App extends Component {
 
   state = {
     isReady: false,
-}
+  }
 componentWillMount(){
   fetch(`${Variables.apiBase}get?v=${Math.random()}`,
       {mode: 'cors'})
